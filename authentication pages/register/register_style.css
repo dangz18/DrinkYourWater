@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #1976d2;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  width: 100%;
+}
+
+.logo-container {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-container #logo-image {
+  width: 350px;
+  height: 40px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.form .register-container {
+  width: 90%;
+  height: fit-content;
+  background: #0a2b50;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+.register-container h1 {
+  background: transparent;
+  color: #fff;
+  letter-spacing: 3px;
+  font-family: "Wendy One", sans-serif;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.register-container h2 {
+  background: transparent;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: "Wendy One", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.register-container #form-error {
+  display: none;
+  color: #ff0000;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.register-container input {
+  display: block;
+  margin: auto;
+  border: 3px solid #fff;
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 80%;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-family: Arial;
+}
+
+.register-container input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #fff;
+  font-family: Arial;
+  font-size: 20px;
+}
+
+#user-waterPerDay::-webkit-outer-spin-button,
+#user-waterPerDay::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.register-container .register-btn {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #1976d2;
+}
+
+.register-container .register-btn a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Wendy One", sans-serif;
+  font-size: 25px;
+  transition: 0.3s ease;
+}
+
+.register-container .register-btn a:hover {
+  color: #000;
+}
+
+.register-container h3 {
+  background: transparent;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: "Wendy One", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.register-container .login-btn {
+  background: transparent;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.register-container .login-btn a {
+  background-color: transparent;
+  color: #fff;
+  font-family: "Wendy One", sans-serif;
+  font-size: 25px;
+  transition: 0.3s ease;
+}
+
+.register-container .login-btn a:hover {
+  color: #1976d2;
+}
+
+@media only screen and (min-width: 768px) {
+  .logo-container #logo-image {
+    width: 600px;
+    height: 80px;
+  }
+
+  .form .register-container {
+    width: 80%;
+  }
+
+  .register-container h1 {
+    font-size: 70px;
+  }
+
+  .register-container h2 {
+    font-size: 35px;
+  }
+
+  .register-container input {
+    font-size: 30px;
+    width: 60%;
+  }
+
+  ::placeholder {
+    font-size: 30px;
+  }
+
+  .register-container .register-btn {
+    width: 140px;
+    height: 50px;
+  }
+
+  .register-container .register-btn a {
+    font-size: 30px;
+  }
+
+  .register-container h3 {
+    font-size: 30px;
+  }
+
+  .register-container .login-btn a {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .logo-container #logo-image {
+    width: 600px;
+    height: 80px;
+  }
+
+  .form .register-container {
+    width: 40%;
+    min-width: 400px;
+  }
+
+  .register-container h1 {
+    font-size: 50px;
+    margin-bottom: 5px;
+  }
+
+  .register-container h2 {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+
+  .register-container input {
+    font-size: 20px;
+    width: 60%;
+  }
+
+  ::placeholder {
+    font-size: 20px;
+  }
+
+  .register-container .register-btn {
+    width: 120px;
+    height: 50px;
+  }
+
+  .register-container .register-btn a {
+    font-size: 25px;
+  }
+
+  .register-container h3 {
+    font-size: 20px;
+  }
+
+  .register-container .login-btn a {
+    font-size: 25px;
+  }
+}

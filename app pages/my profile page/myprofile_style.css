@@ -1,0 +1,438 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #1976d2;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  width: 100%;
+}
+
+.banner-container {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo-container {
+  display: none;
+  margin-left: 10px;
+  height: 50px;
+  float: left;
+}
+
+.logo-container #logo-image {
+  display: none;
+  height: auto;
+  width: 70%;
+}
+
+.menu-container {
+  height: 50px;
+  float: left;
+}
+
+#space {
+  display: block;
+  width: 20px;
+}
+
+ul {
+  float: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li {
+  list-style: none;
+  margin-top: 10px;
+  margin-right: 0px;
+  cursor: pointer;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Wendy One", sans-serif;
+  font-size: 35px;
+  transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+  color: #0a2b50;
+}
+
+#current-page {
+  color: #0a2b50;
+  cursor: default;
+}
+
+.page-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.page-container #bottle {
+  display: none;
+  height: 600px;
+  width: 95%;
+  margin-top: 50px;
+  position: relative;
+}
+
+.page-container .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: 50px;
+  height: min-content;
+  width: 80%;
+  background: #0a2b50;
+  border-radius: 25px;
+}
+
+.page-container h2 {
+  background: transparent;
+  font-size: 30px;
+  font-family: "Wendy One", sans-serif;
+  color: #fff;
+}
+
+.page-container #inputName-controller {
+  background: transparent;
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+#inputName-controller textarea {
+  background: transparent;
+  resize: none;
+  border: 3px solid #fff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 80%;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 25px;
+  font-family: Arial;
+}
+
+#inputName-controller textarea:focus {
+  outline: none;
+}
+
+.editName-controller {
+  background: transparent;
+}
+
+#editNameBtn {
+  height: 30px;
+  width: 50px;
+  font-size: 20px;
+  font-family: "Wendy One", sans-serif;
+  border: 0px;
+  border-radius: 25px;
+  margin-top: 5px;
+}
+
+#editNameBtn:hover {
+  color: #fff;
+}
+
+#updateName-controller {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#saveNameBtn {
+  height: 30px;
+  width: 50px;
+  font-size: 20px;
+  font-family: "Wendy One", sans-serif;
+  border: 0px;
+  border-radius: 25px;
+  margin-top: 5px;
+  background: green;
+}
+
+#saveNameBtn:hover {
+  color: #fff;
+}
+
+#cancelNameBtn {
+  height: 30px;
+  width: 70px;
+  font-size: 20px;
+  font-family: "Wendy One", sans-serif;
+  border: 0px;
+  border-radius: 25px;
+  margin-top: 5px;
+  background: red;
+}
+
+#cancelNameBtn:hover {
+  color: #fff;
+}
+
+.page-container #inputEmail-controller {
+  background: transparent;
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+#inputEmail-controller textarea {
+  background: transparent;
+  resize: none;
+  border: 3px solid #fff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 80%;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 25px;
+  font-family: Arial;
+}
+
+#inputEmail-controller textarea:focus {
+  outline: none;
+}
+
+.editEmail-controller {
+  background: transparent;
+}
+
+#editEmailBtn {
+  height: 30px;
+  width: 50px;
+  font-size: 20px;
+  font-family: "Wendy One", sans-serif;
+  border: 0px;
+  border-radius: 25px;
+  margin-top: 5px;
+}
+
+#editEmailBtn:hover {
+  color: #fff;
+}
+
+#updateEmail-controller {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#saveEmailBtn {
+  height: 30px;
+  width: 50px;
+  font-size: 20px;
+  font-family: "Wendy One", sans-serif;
+  border: 0px;
+  border-radius: 25px;
+  margin-top: 5px;
+  background: green;
+}
+
+#saveEmailBtn:hover {
+  color: #fff;
+}
+
+#cancelEmailBtn {
+  height: 30px;
+  width: 70px;
+  font-size: 20px;
+  font-family: "Wendy One", sans-serif;
+  border: 0px;
+  border-radius: 25px;
+  margin-top: 5px;
+  background: red;
+}
+
+#cancelEmailBtn:hover {
+  color: #fff;
+}
+
+.page-container input {
+  background: transparent;
+  border: 3px solid #fff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 50%;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 25px;
+  font-family: Arial;
+}
+
+.page-container input:focus {
+  outline: none;
+}
+
+#inputError {
+  display: none;
+  color: red;
+  font-size: 20px;
+}
+
+#updatePasswordBtn {
+  height: 50px;
+  width: 200px;
+  font-size: 20px;
+  font-family: "Wendy One", sans-serif;
+  border: 0px;
+  border-radius: 25px;
+  margin-top: 5px;
+  background: green;
+  margin-bottom: 10px;
+}
+
+#updatePasswordBtn:hover {
+  color: #fff;
+}
+
+#updateName-controller {
+  display: none;
+}
+
+#updateEmail-controller {
+  display: none;
+}
+
+.page-container #logout-btn {
+  border: none;
+  height: 50px;
+  width: 120px;
+  border-radius: 25px;
+  background: #1976d2;
+  margin-bottom: 20px;
+}
+
+.page-container #logout-btn a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-family: "Wendy One", sans-serif;
+  transition: 0.3s ease;
+}
+
+.page-container #logout-btn a:hover {
+  color: black;
+}
+
+.page-container #logout-btn:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .banner-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .menu-container {
+    float: none;
+  }
+
+  #space {
+    width: 50px;
+  }
+
+  .logo-container {
+    display: none;
+  }
+
+  .logo-container #logo-image {
+    display: none;
+  }
+
+  ul li {
+    margin-right: 0px;
+  }
+
+  ul li a {
+    font-size: 40px;
+  }
+
+  .page-container .form {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .banner-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu-container {
+    float: left;
+  }
+
+  #space {
+    display: none;
+    width: 0px;
+  }
+
+  .logo-container {
+    display: block;
+  }
+
+  .logo-container #logo-image {
+    display: block;
+  }
+
+  ul li {
+    margin-right: 50px;
+  }
+
+  ul li a {
+    font-size: 40px;
+  }
+
+  .page-container {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .page-container #bottle {
+    display: block;
+  }
+
+  .page-container .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 36%;
+    height: 450px;
+    width: 42%;
+    background: transparent;
+  }
+}

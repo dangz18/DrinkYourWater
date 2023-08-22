@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #1976d2;
+}
+
+:root {
+  --fill-animation: none;
+}
+
+.main {
+  width: 100%;
+}
+
+.logo-container {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-container #logo-image {
+  width: 350px;
+  height: 40px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.form .login-container {
+  width: 90%;
+  height: fit-content;
+  background: #0a2b50;
+  border-radius: 20px;
+}
+
+.login-container h1 {
+  background: transparent;
+  color: #fff;
+  letter-spacing: 3px;
+  font-family: "Wendy One", sans-serif;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-container h2 {
+  background: transparent;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: "Wendy One", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.login-container input {
+  display: block;
+  margin: auto;
+  border: 3px solid #fff;
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 80%;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-family: Arial;
+}
+
+.login-container input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #fff;
+  font-family: Arial;
+  font-size: 20px;
+}
+
+.login-container .login-btn {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #1976d2;
+}
+
+.login-container .login-btn a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Wendy One", sans-serif;
+  font-size: 25px;
+  transition: 0.3s ease;
+}
+
+.login-container .login-btn a:hover {
+  color: #000;
+}
+
+.login-container h3 {
+  background: transparent;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: "Wendy One", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.login-container #form-error {
+  display: none;
+  color: #ff0000;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.login-container .register-btn {
+  background: transparent;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-container .register-btn a {
+  background-color: transparent;
+  color: #fff;
+  font-family: "Wendy One", sans-serif;
+  font-size: 25px;
+  transition: 0.3s ease;
+}
+
+.login-container .register-btn a:hover {
+  color: #1976d2;
+}
+
+.icons {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  background: transparent;
+}
+
+.icons a {
+  text-decoration: none;
+  color: #fff;
+  background-color: transparent;
+}
+
+.icons i {
+  color: #fff;
+  background-color: transparent;
+  font-size: 30px;
+  margin-top: 15px;
+  transition: 0.3s ease;
+}
+
+.icons i:hover {
+  color: #1976d2;
+}
+
+@media only screen and (min-width: 768px) {
+  .logo-container #logo-image {
+    width: 600px;
+    height: 80px;
+  }
+
+  .form .login-container {
+    width: 70%;
+  }
+
+  .login-container h1 {
+    font-size: 70px;
+  }
+
+  .login-container h2 {
+    font-size: 40px;
+  }
+
+  .login-container input {
+    font-size: 30px;
+  }
+
+  ::placeholder {
+    font-size: 30px;
+  }
+
+  .login-container .login-btn {
+    width: 120px;
+    height: 50px;
+  }
+
+  .login-container .login-btn a {
+    font-size: 35px;
+  }
+
+  .login-container h3 {
+    font-size: 30px;
+  }
+
+  .login-container .register-btn a {
+    font-size: 35px;
+  }
+
+  .icons i {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .logo-container #logo-image {
+    width: 600px;
+    height: 80px;
+  }
+
+  .form .login-container {
+    width: 30%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .form .login-container::before {
+    display: var(--fill-animation);
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 660px;
+    background: #1976d2;
+    border-radius: 260px;
+    transform: translateX(-50%);
+    left: 50%;
+    animation: fill 7s ease-in-out infinite;
+  }
+
+  @keyframes fill {
+    from {
+      top: 500px;
+      transform: translateX(-50%) rotate(0deg);
+    }
+    to {
+      top: -70px;
+      transform: translateX(-50%) rotate(360deg);
+    }
+  }
+
+  .login-container h1 {
+    font-size: 50px;
+    margin-bottom: 5px;
+  }
+
+  .login-container h2 {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  .login-container input {
+    font-size: 20px;
+    width: 70%;
+  }
+
+  ::placeholder {
+    font-size: 20px;
+  }
+
+  .login-container .login-btn {
+    width: 120px;
+    height: 50px;
+  }
+
+  .login-container .login-btn a {
+    font-size: 35px;
+  }
+
+  .login-container h3 {
+    font-size: 20px;
+  }
+
+  .login-container .register-btn a {
+    font-size: 25px;
+  }
+
+  .icons i {
+    font-size: 30px;
+  }
+}

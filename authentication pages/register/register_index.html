@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@800&family=VT323&family=Wendy+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="register_style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="logo-container">
+        <img src="/hydrationapp/logo.png" id="logo-image" />
+      </div>
+      <div class="form">
+        <div class="register-container">
+          <h1>Register</h1>
+
+          <h2 id="name-text">Enter your name:</h2>
+          <label for="user-name"></label>
+          <input
+            required
+            type="text"
+            placeholder="Type here..."
+            id="user-name"
+            name="user-name"
+          />
+          <h2 id="email-text">Enter your email:</h2>
+          <label for="user-email"></label>
+          <input
+            required
+            type="email"
+            placeholder="Type here..."
+            id="user-email"
+            name="user-email"
+          />
+          <h2 id="password-text">Make a password:</h2>
+          <label for="user-password"></label>
+          <input
+            required
+            type="password"
+            placeholder="Type here..."
+            id="user-password"
+            name="user-password"
+          />
+          <h2 id="confirm-password-text">Confirm password:</h2>
+          <label for="user-confirm-password"></label>
+          <input
+            required
+            type="password"
+            placeholder="Type here..."
+            id="user-confirm-password"
+            name="user-confirm-password"
+          />
+          <h2 id="waterPerDay-text">Enter water per day intake goal:</h2>
+          <label for="user-waterPerDay"></label>
+          <input
+            required
+            type="number"
+            placeholder="Enter the quantity in ml"
+            id="user-waterPerDay"
+            name="user-waterPerDay"
+          />
+          <h2 id="form-error"></h2>
+          <button class="register-btn" id="register-btn">
+            <a>Register</a>
+          </button>
+
+          <h3>Already have an account?</h3>
+          <div class="login-btn">
+            <a href="../login/login_index.html">Log In</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="register_main.js"></script>
+</html>

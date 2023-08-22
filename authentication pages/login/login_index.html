@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@800&family=VT323&family=Wendy+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="login_style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="logo-container">
+        <img src="/hydrationapp/logo.png" id="logo-image" />
+      </div>
+      <div class="form">
+        <div class="login-container" id="login-container">
+          <h1>Log In</h1>
+          <h2 id="email-text">Enter email:</h2>
+          <label for="user-email"></label>
+          <input
+            type="email"
+            placeholder="Type here..."
+            id="user-email"
+            name="user-email"
+            required
+          />
+          <h2 id="password-text">Enter password:</h2>
+          <label for="user-password"></label>
+          <input
+            type="password"
+            placeholder="Type here..."
+            id="user-password"
+            name="user-password"
+            required
+          />
+          <h2 id="form-error"></h2>
+          <button class="login-btn" id="login-btn">
+            <a>Log In</a>
+          </button>
+          <h3>Don't have an account yet?</h3>
+          <div class="register-btn">
+            <a href="../register/register_index.html">Register</a>
+          </div>
+          <h3>Log in With:</h3>
+          <div class="icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-google"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="login_main.js"></script>
+</html>
